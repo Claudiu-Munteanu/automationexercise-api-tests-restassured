@@ -1,4 +1,4 @@
-# automationexercise-api-tests-restassured-testng-java
+# AutomationExercise API Test Suite (Java, REST Assured, TestNG) (WIP)
 
 This repository contains a **demo API test automation project** created for **showcasing my skills** in writing and organizing automated API tests using:
 
