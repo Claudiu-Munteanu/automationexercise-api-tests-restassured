@@ -36,7 +36,7 @@
 
         <!-- Test Configuration -->
         <servicesInParallel>4</servicesInParallel>
-        <serviceName>All</serviceName>
+        <serviceName>AllApiTests</serviceName>
     </properties>
 
     <!-- Dependencies -->
