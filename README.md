@@ -98,4 +98,24 @@ src/
 
 ## ▶️ How to Run the Tests
 
-> Work in progress...
+There are two main ways to see these tests in action:
+
+### 1. Run in GitHub Actions (Recommended)
+- **Fork** this repository to your own GitHub account.
+- Go to the **Actions** tab in your fork.
+- Select the **AutomationExercise API Test Suite** workflow and click **Run workflow**.
+- Once complete, you can review logs and view the Allure Report (https://<YOUR-USERNAME>.github.io/automationexercise-api-tests-restassured-testng-java/) if published.
+
+### 2. Run Locally
+- Clone this repository.
+- Make sure you have **Java 17** and **Maven** installed.
+- Run the tests:
+  ```sh
+  mvn clean test -DsuiteXmlFile=src/test/resources/runners/TestNG_AllApiTests.xml
+  ```
+- (Optional) To generate a report, install Allure CLI and run:
+  ```sh
+  npm install -g allure-commandline --unsafe-perm=true
+  allure generate allure-results --clean -o allure-report
+  allure open allure-report
+  ```
