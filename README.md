@@ -11,8 +11,6 @@
   </a>
 </p>
 
----
-
 This repository contains a **demo API test automation project** created for **showcasing my skills** in writing and organizing automated API tests using:
 
 - **Java**
@@ -35,8 +33,6 @@ The tests target the publicly accessible APIs at [Automation Exercise](https://a
 | TestNG          | Test runner and assertion management   |
 | Allure Reports  | Test reporting and visualization       |
 | IntelliJ IDEA   | Development environment                |
-
----
 
 ## 📁 Project Structure
 
