@@ -1,5 +1,18 @@
 # AutomationExercise API Test Suite (Java, REST Assured, TestNG) (WIP)
 
+<p align="center">
+  <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
+    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="500"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://claudiu-munteanu.github.io/automationexercise-api-tests-restassured-testng-java/">
+    <img src="https://img.shields.io/badge/Allure_Report:-Click Here-4e7eff?logo=allure&logoColor=white" alt="Allure Report" width="275"/>
+  </a>
+</p>
+
+---
+
 This repository contains a **demo API test automation project** created for **showcasing my skills** in writing and organizing automated API tests using:
 
 - **Java**
