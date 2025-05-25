@@ -23,6 +23,11 @@ jobs:
         run: |
           sudo npm install -g allure-commandline --unsafe-perm=true
 
+      - name: Debug allure-results content
+        run: |
+          ls -l allure-results || echo "allure-results not found"
+          find . -name "allure-results"
+
       - name: Generate Allure report
         run: |
           allure generate allure-results --clean -o allure-report
