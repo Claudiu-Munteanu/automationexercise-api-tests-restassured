@@ -1,7 +1,7 @@
 package com.automationexercise.tests;
 
 import com.automationexercise.AutomationExerciseWebService;
-import com.automationexercise.contracts.RetryConfiguration;
+import com.automationexercise.utils.RetryConfiguration;
 import io.qameta.allure.testng.AllureTestNg;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

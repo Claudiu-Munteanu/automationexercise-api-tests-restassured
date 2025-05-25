@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-public class GET_ProductsList extends TestBase {
+public class ProductsList extends TestBase {
 
     @Test(description = "Get All Products List", retryAnalyzer = TestBase.class)
     public void getProductsList() {
@@ -20,5 +20,13 @@ public class GET_ProductsList extends TestBase {
                 containsStringIgnoringCase("price"),
                 containsStringIgnoringCase("brand"),
                 containsStringIgnoringCase("category")));
+    }
+
+    @Test(description = "POST To All Products List", retryAnalyzer = TestBase.class)
+    public void postProductsList() {
+        Response postProductsList = automationExerciseWebService.postProductsList();
+        assertThat(postProductsList.getStatusCode(), equalTo(200));
+        assertThat(postProductsList.jsonPath().getInt("responseCode"), equalTo(405));
+        assertThat(postProductsList.jsonPath().getString("message"), equalTo("This request method is not supported."));
     }
 }

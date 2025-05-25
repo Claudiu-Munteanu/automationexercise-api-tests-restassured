@@ -1,4 +1,4 @@
-package com.automationexercise.contracts;
+package com.automationexercise.utils;
 
 public class RetryConfiguration {
     protected static final int maxRetries = System.getenv("MAX_RETRIES") != null
