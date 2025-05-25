@@ -1,6 +1,7 @@
 package com.automationexercise.tests.createAccount;
 
 import com.automationexercise.tests.TestBase;
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -10,6 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+@Feature("Create Account API")
 public class CreateAccount extends TestBase {
     public static final String name = "ThisIsAName";
     public static final String email = "thisisa@mail.test";

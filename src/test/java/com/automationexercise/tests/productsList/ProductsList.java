@@ -1,12 +1,14 @@
 package com.automationexercise.tests.productsList;
 
 import com.automationexercise.tests.TestBase;
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+@Feature("Products List API")
 public class ProductsList extends TestBase {
 
     @Test(description = "Get All Products List", retryAnalyzer = TestBase.class)

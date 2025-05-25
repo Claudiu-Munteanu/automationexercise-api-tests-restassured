@@ -3,18 +3,18 @@ package com.automationexercise.tests.getUserDetailByEmail;
 import com.automationexercise.tests.TestBase;
 import com.automationexercise.tests.createAccount.CreateAccount;
 import com.automationexercise.tests.updateAccount.UpdateAccount;
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+@Feature("Get User Detail By Email API")
 public class GetUserDetailByEmail extends TestBase {
 
     @Test(description = "GET user account detail by email", retryAnalyzer = TestBase.class)
     public void getUserDetailByEmail() {
-
-
         Response getUserDetailByEmail = automationExerciseWebService.getUserDetailByEmail("thisisa@mail.test");
         assertThat(getUserDetailByEmail.getStatusCode(), equalTo(200));
         assertThat(getUserDetailByEmail.jsonPath().getInt("responseCode"), equalTo(200));
