@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
-    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="500"/>
+    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="250"/>
   </a>
 </p>
 <p align="center">
@@ -105,7 +105,7 @@ There are two main ways to see these tests in action:
 ### 1. Run in GitHub Actions (Recommended)
 - **Fork** this repository to your own GitHub account.
 - Go to the **Actions** tab in your fork.
-- Select the **AutomationExercise API Test Suite** workflow and click **Run workflow**.
+- Select the **test-run** workflow and click **Run workflow**.
 - Once complete, you can review logs and view the Allure Report (https://<YOUR-USERNAME>.github.io/automationexercise-api-tests-restassured-testng-java/) if published.
 
 ### 2. Run Locally
