@@ -1,10 +1,8 @@
 <h1 align="center">AutomationExercise API Test Suite</h1>
 
----
-
 <p align="center">
   <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
-    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="500"/>
+    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="250"/>
   </a>
 </p>
 <p align="center">
@@ -12,8 +10,6 @@
     <img src="https://img.shields.io/badge/Allure_Report:-Click Here-4e7eff?logo=allure&logoColor=white" alt="Allure Report" width="275"/>
   </a>
 </p>
-
----
 
 This repository contains a **demo API test automation project** created for **showcasing my skills** in writing and organizing automated API tests using:
 
@@ -27,8 +23,6 @@ The tests target the publicly accessible APIs at [Automation Exercise](https://a
 > ⚠️ This is a portfolio project, not intended for production use.  
 > Its purpose is to demonstrate practical knowledge of API testing tools, frameworks, and best practices.
 
----
-
 ## 🛠️ Tech Stack
 
 | Tool            | Purpose                                |
@@ -39,8 +33,6 @@ The tests target the publicly accessible APIs at [Automation Exercise](https://a
 | TestNG          | Test runner and assertion management   |
 | Allure Reports  | Test reporting and visualization       |
 | IntelliJ IDEA   | Development environment                |
-
----
 
 ## 📁 Project Structure
 
@@ -73,8 +65,6 @@ src/
 └── README.md
 ```
 
----
-
 ## ✅ API Endpoints & Test Coverage
 
 **Base URL**: `https://automationexercise.com/api/`
@@ -96,8 +86,6 @@ src/
 | 13 | `updateAccount`        | PUT         | `name`, `email`, `password`, `title`, `birth_date`, `birth_month`, `birth_year`, `firstname`, `lastname`, `company`, `address1`, `address2`, `country`, `zipcode`, `state`, `city`, `mobile_number` | 200          | —          | `User updated!`                                                          |
 | 14 | `getUserDetailByEmail` | GET         | `email`                                                                                                                                                                                           | 200          | —          | User detail (JSON)                                                     |
 
----
-
 ## ▶️ How to Run the Tests
 
 There are two main ways to see these tests in action:
@@ -105,7 +93,7 @@ There are two main ways to see these tests in action:
 ### 1. Run in GitHub Actions (Recommended)
 - **Fork** this repository to your own GitHub account.
 - Go to the **Actions** tab in your fork.
-- Select the **AutomationExercise API Test Suite** workflow and click **Run workflow**.
+- Select the **test-run** workflow and click **Run workflow**.
 - Once complete, you can review logs and view the Allure Report (https://<YOUR-USERNAME>.github.io/automationexercise-api-tests-restassured-testng-java/) if published.
 
 ### 2. Run Locally
