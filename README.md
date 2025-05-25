@@ -1,7 +1,5 @@
 <h1 align="center">AutomationExercise API Test Suite</h1>
 
----
-
 <p align="center">
   <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
     <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="250"/>
@@ -26,8 +24,6 @@ The tests target the publicly accessible APIs at [Automation Exercise](https://a
 
 > ⚠️ This is a portfolio project, not intended for production use.  
 > Its purpose is to demonstrate practical knowledge of API testing tools, frameworks, and best practices.
-
----
 
 ## 🛠️ Tech Stack
 
@@ -73,8 +69,6 @@ src/
 └── README.md
 ```
 
----
-
 ## ✅ API Endpoints & Test Coverage
 
 **Base URL**: `https://automationexercise.com/api/`
@@ -95,8 +89,6 @@ src/
 | 12 | `deleteAccount`        | DELETE      | `email`, `password`                                                                                                                                                                               | 200          | —          | `Account deleted!`                                                     |
 | 13 | `updateAccount`        | PUT         | `name`, `email`, `password`, `title`, `birth_date`, `birth_month`, `birth_year`, `firstname`, `lastname`, `company`, `address1`, `address2`, `country`, `zipcode`, `state`, `city`, `mobile_number` | 200          | —          | `User updated!`                                                          |
 | 14 | `getUserDetailByEmail` | GET         | `email`                                                                                                                                                                                           | 200          | —          | User detail (JSON)                                                     |
-
----
 
 ## ▶️ How to Run the Tests
 
