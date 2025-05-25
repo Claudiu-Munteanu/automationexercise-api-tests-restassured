@@ -21,8 +21,10 @@ jobs:
 
       - name: Download Allure History
         continue-on-error: true
-        uses: actions/download-artifact@v4
+        uses: dawidd6/action-download-artifact@v3
         with:
+          workflow: ci.yml
+          workflow_conclusion: success
           name: allure-history
           path: allure-history
 
@@ -59,8 +61,7 @@ jobs:
           }' > allure-results/executor.json
 
       - name: Generate Allure report
-        run: |
-          allure generate allure-results --clean -o allure-report
+        run: allure generate allure-results --clean -o allure-report
 
       - name: Ensure history folder exists
         run: mkdir -p allure-report/history
