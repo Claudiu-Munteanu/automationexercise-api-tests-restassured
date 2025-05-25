@@ -1,4 +1,4 @@
-name: AutomationExercise API Test Suite
+name: Test Run
 
 on:
   push:
