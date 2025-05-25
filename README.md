@@ -94,7 +94,7 @@ There are two main ways to see these tests in action:
 - **Fork** this repository to your own GitHub account.
 - Go to the **Actions** tab in your fork.
 - Select the **test-run** workflow and click **Run workflow**.
-- Once complete, you can review logs and view the Allure Report (https://<YOUR-USERNAME>.github.io/automationexercise-api-tests-restassured-testng-java/) if published.
+- Once complete, you can review logs and view the [Allure Report](https://your-username.github.io/automationexercise-api-tests-restassured-testng-java/) if published.
 
 ### 2. Run Locally
 - Clone this repository.
