@@ -1,4 +1,6 @@
-# AutomationExercise API Test Suite (Java, REST Assured, TestNG)
+<h1 align="center">AutomationExercise API Test Suite</h1>
+
+---
 
 <p align="center">
   <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
