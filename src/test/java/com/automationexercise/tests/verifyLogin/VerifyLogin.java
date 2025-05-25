@@ -2,12 +2,14 @@ package com.automationexercise.tests.verifyLogin;
 
 import com.automationexercise.tests.TestBase;
 import com.automationexercise.tests.createAccount.CreateAccount;
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+@Feature("Verify Login API")
 public class VerifyLogin extends TestBase {
 
     @Test(description = "POST To Verify Login with valid details", retryAnalyzer = TestBase.class)

@@ -3,16 +3,14 @@
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-    <test name="All API Tests">
-        <classes>
-            <class name="com.automationexercise.tests.productsList.ProductsList"/>
-            <class name="com.automationexercise.tests.brandsList.BrandsList"/>
-            <class name="com.automationexercise.tests.searchProduct.SearchProduct"/>
-            <class name="com.automationexercise.tests.createAccount.CreateAccount"/>
-            <class name="com.automationexercise.tests.verifyLogin.VerifyLogin"/>
-            <class name="com.automationexercise.tests.updateAccount.UpdateAccount"/>
-            <class name="com.automationexercise.tests.getUserDetailByEmail.GetUserDetailByEmail"/>
-            <class name="com.automationexercise.tests.deleteAccount.DeleteAccount"/>
-        </classes>
-    </test>
+        <suite-files>
+            <suite-file path="ProductsListApiTestSuite.xml"/>
+            <suite-file path="BrandsListApiTests.xml"/>
+            <suite-file path="SearchProductApiTestSuite.xml"/>
+            <suite-file path="CreateAccountApiTests.xml"/>
+            <suite-file path="VerifyLoginApiTests.xml"/>
+            <suite-file path="UpdateAccountApiTestSuite.xml"/>
+            <suite-file path="GetUserDetailByEmailApiTests.xml"/>
+            <suite-file path="DeleteAccountApiTestSuite.xml"/>
+        </suite-files>
 </suite>

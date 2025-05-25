@@ -35,7 +35,7 @@
         <versions.maven.plugin.version>2.18.0</versions.maven.plugin.version>
 
         <!-- Test Configuration -->
-        <servicesInParallel>4</servicesInParallel>
+        <servicesInParallel>1</servicesInParallel>
         <serviceName>AllApiTests</serviceName>
     </properties>
 

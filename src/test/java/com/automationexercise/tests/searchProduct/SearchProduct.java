@@ -1,6 +1,7 @@
 package com.automationexercise.tests.searchProduct;
 
 import com.automationexercise.tests.TestBase;
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -9,6 +10,7 @@ import java.util.Random;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+@Feature("Search Product API")
 public class SearchProduct extends TestBase {
 
     @Test(description = "POST To Search Product", retryAnalyzer = TestBase.class)

@@ -2,6 +2,7 @@ package com.automationexercise.tests.updateAccount;
 
 import com.automationexercise.tests.TestBase;
 import com.automationexercise.tests.createAccount.CreateAccount;
+import io.qameta.allure.Feature;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -11,6 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
+@Feature("Update Account API")
 public class UpdateAccount extends TestBase {
     private static final Random random = new Random();
     public static final String updated_name = CreateAccount.name + "Updated";
