@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Brands List API Tests" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="Brands List Tests">
+        <classes>
+            <class name="com.automationexercise.tests.brandsList.BrandsList"/>
+        </classes>
+    </test>
+</suite>
