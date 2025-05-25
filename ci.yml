@@ -1,0 +1,34 @@
+name: Java CI with Maven and Allure
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build and test with Maven
+        run: mvn -B clean test -DsuiteXmlFile=src/test/resources/runners/TestNG_AllApiTests.xml
+
+      - name: Install Allure CLI
+        run: |
+          sudo npm install -g allure-commandline --unsafe-perm=true
+
+      - name: Generate Allure report
+        run: |
+          allure generate allure-results --clean -o allure-report
+
+      - name: Upload Allure report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
