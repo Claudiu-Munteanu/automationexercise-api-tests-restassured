@@ -7,7 +7,7 @@
 </p>
 <p align="center">
   <a href="https://claudiu-munteanu.github.io/automationexercise-api-tests-restassured-testng-java/">
-    <img src="https://img.shields.io/badge/Allure_Report:-Click Here-4e7eff?logo=allure&logoColor=white" alt="Allure Report" width="275"/>
+    <img src="https://img.shields.io/badge/Allure_Report:-Click Here-4e7eff?logo=allure&logoColor=white" alt="Allure Report" width="300"/>
   </a>
 </p>
 
@@ -67,24 +67,141 @@ src/
 
 ## ✅ API Endpoints & Test Coverage
 
-**Base URL**: `https://automationexercise.com/api/`
+**Base URL:** `https://automationexercise.com/api/`
 
-| #  | Endpoint                | HTTP Method | Params/Body                                                                                                                                                                                       | Success Code | Error Code | Response                                                               |
-|----|------------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------|------------------------------------------------------------------------|
-| 1  | `productsList`         | GET         | —                                                                                                                                                                                                 | 200          | —          | All products list (JSON)                                               |
-| 2  | `productsList`         | POST        | —                                                                                                                                                                                                 | —            | 405        | `This request method is not supported.`                                |
-| 3  | `brandsList`           | GET         | —                                                                                                                                                                                                 | 200          | —          | All brands list (JSON)                                                 |
-| 4  | `brandsList`           | PUT         | —                                                                                                                                                                                                 | —            | 405        | `This request method is not supported.`                                |
-| 5  | `searchProduct`        | POST        | `search_product`                                                                                                                                                                                  | 200          | —          | Searched products list (JSON)                                          |
-| 6  | `searchProduct`        | POST        | No `search_product`                                                                                                                                                                               | —            | 400        | `Bad request, search_product parameter is missing in POST request.`    |
-| 7  | `verifyLogin`          | POST        | `email`, `password`                                                                                                                                                                               | 200          | —          | `User exists!`                                                         |
-| 8  | `verifyLogin`          | POST        | No `email`                                                                                                                                                                                        | —            | 400        | `Bad request, email or password parameter is missing in POST request.` |
-| 9  | `verifyLogin`          | DELETE      | —                                                                                                                                                                                                 | —            | 405        | `This request method is not supported.`                                |
-| 10 | `verifyLogin`          | POST        | Invalid `email`, `password`                                                                                                                                                                       | —            | 404        | `User not found!`                                                      |
-| 11 | `createAccount`        | POST        | `name`, `email`, `password`, `title`, `birth_date`, `birth_month`, `birth_year`, `firstname`, `lastname`, `company`, `address1`, `address2`, `country`, `zipcode`, `state`, `city`, `mobile_number` | 201          | —          | `User created!`                                                        |
-| 12 | `deleteAccount`        | DELETE      | `email`, `password`                                                                                                                                                                               | 200          | —          | `Account deleted!`                                                     |
-| 13 | `updateAccount`        | PUT         | `name`, `email`, `password`, `title`, `birth_date`, `birth_month`, `birth_year`, `firstname`, `lastname`, `company`, `address1`, `address2`, `country`, `zipcode`, `state`, `city`, `mobile_number` | 200          | —          | `User updated!`                                                          |
-| 14 | `getUserDetailByEmail` | GET         | `email`                                                                                                                                                                                           | 200          | —          | User detail (JSON)                                                     |
+<details>
+<summary><strong>Get All Products List</strong></summary>
+
+- **Endpoint:** `/productsList`
+- **Request Method:** `GET`
+- **Response Code:** `200`
+- **Response JSON:** All products list
+</details>
+
+<details>
+<summary><strong>POST To All Products List</strong></summary>
+
+- **Endpoint:** `/productsList`
+- **Request Method:** `POST`
+- **Response Code:** `405`
+- **Response Message:** This request method is not supported.
+</details>
+
+<details>
+<summary><strong>Get All Brands List</strong></summary>
+
+- **Endpoint:** `/brandsList`
+- **Request Method:** `GET`
+- **Response Code:** `200`
+- **Response JSON:** All brands list
+</details>
+
+<details>
+<summary><strong>PUT To All Brands List</strong></summary>
+
+- **Endpoint:** `/brandsList`
+- **Request Method:** `PUT`
+- **Response Code:** `405`
+- **Response Message:** This request method is not supported.
+</details>
+
+<details>
+<summary><strong>POST To Search Product</strong></summary>
+
+- **Endpoint:** `/searchProduct`
+- **Request Method:** `POST`
+- **Request Parameter:** `search_product` (e.g., `top`, `tshirt`, `jean`)
+- **Response Code:** `200`
+- **Response JSON:** Searched products list
+</details>
+
+<details>
+<summary><strong>POST To Search Product without search_product parameter</strong></summary>
+
+- **Endpoint:** `/searchProduct`
+- **Request Method:** `POST`
+- **Response Code:** `400`
+- **Response Message:** Bad request, search_product parameter is missing in POST request.
+</details>
+
+<details>
+<summary><strong>POST To Verify Login with valid details</strong></summary>
+
+- **Endpoint:** `/verifyLogin`
+- **Request Method:** `POST`
+- **Request Parameters:** `email`, `password`
+- **Response Code:** `200`
+- **Response Message:** User exists!
+</details>
+
+<details>
+<summary><strong>POST To Verify Login without email parameter</strong></summary>
+
+- **Endpoint:** `/verifyLogin`
+- **Request Method:** `POST`
+- **Request Parameter:** `password`
+- **Response Code:** `400`
+- **Response Message:** Bad request, email or password parameter is missing in POST request.
+</details>
+
+<details>
+<summary><strong>DELETE To Verify Login</strong></summary>
+
+- **Endpoint:** `/verifyLogin`
+- **Request Method:** `DELETE`
+- **Response Code:** `405`
+- **Response Message:** This request method is not supported.
+</details>
+
+<details>
+<summary><strong>POST To Verify Login with invalid details</strong></summary>
+
+- **Endpoint:** `/verifyLogin`
+- **Request Method:** `POST`
+- **Request Parameters:** `email`, `password` (invalid values)
+- **Response Code:** `404`
+- **Response Message:** User not found!
+</details>
+
+<details>
+<summary><strong>POST To Create/Register User Account</strong></summary>
+
+- **Endpoint:** `/createAccount`
+- **Request Method:** `POST`
+- **Request Parameters:** `name`, `email`, `password`, `title` (e.g., `Mr`, `Mrs`, `Miss`), `birth_date`, `birth_month`, `birth_year`, `firstname`, `lastname`, `company`, `address1`, `address2`, `country`, `zipcode`, `state`, `city`, `mobile_number`
+- **Response Code:** `201`
+- **Response Message:** User created!
+</details>
+
+<details>
+<summary><strong>DELETE To Delete User Account</strong></summary>
+
+- **Endpoint:** `/deleteAccount`
+- **Request Method:** `DELETE`
+- **Request Parameters:** `email`, `password`
+- **Response Code:** `200`
+- **Response Message:** Account deleted!
+</details>
+
+<details>
+<summary><strong>PUT To Update User Account</strong></summary>
+
+- **Endpoint:** `/updateAccount`
+- **Request Method:** `PUT`
+- **Request Parameters:** `name`, `email`, `password`, `title` (e.g., `Mr`, `Mrs`, `Miss`), `birth_date`, `birth_month`, `birth_year`, `firstname`, `lastname`, `company`, `address1`, `address2`, `country`, `zipcode`, `state`, `city`, `mobile_number`
+- **Response Code:** `200`
+- **Response Message:** User updated!
+</details>
+
+<details>
+<summary><strong>GET user account detail by email</strong></summary>
+
+- **Endpoint:** `/getUserDetailByEmail`
+- **Request Method:** `GET`
+- **Request Parameters:** `email`
+- **Response Code:** `200`
+- **Response JSON:** User Detail
+</details>
 
 ## ▶️ How to Run the Tests
 
