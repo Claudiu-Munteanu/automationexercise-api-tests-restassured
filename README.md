@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
-    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml/badge.svg" alt="CI" width="250"/>
+    <img src="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured/actions/workflows/ci.yml/badge.svg" alt="CI" width="250"/>
   </a>
 </p>
 <p align="center">
-  <a href="https://claudiu-munteanu.github.io/automationexercise-api-tests-restassured-testng-java/">
+  <a href="https://claudiu-munteanu.github.io/automationexercise-api-tests-restassured/">
     <img src="https://img.shields.io/badge/Allure_Report:-Click Here-4e7eff?logo=allure&logoColor=white" alt="Allure Report" width="300"/>
   </a>
 </p>
