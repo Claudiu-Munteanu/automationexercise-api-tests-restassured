@@ -1,4 +1,4 @@
-<h1 align="center">AutomationExercise API Test Suite</h1>
+<h1 align="center">automationexercise.com - API Test Suite</h1>
 
 <p align="center">
   <a href="https://github.com/Claudiu-Munteanu/automationexercise-api-tests-restassured-testng-java/actions/workflows/ci.yml">
